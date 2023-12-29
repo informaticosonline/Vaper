@@ -1,0 +1,89 @@
+/* Estilos Generales */
+body {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-image: "/images/cielo-estrellado";
+    color: #fff /* Texto blanco para contraste */
+}
+
+/* Estilos para los encabezados */
+h1 {
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+h2, h3, h4 {
+    color: #fff; /* Texto blanco */
+}
+
+/* Estilos para las imágenes */
+img {
+    max-width: 100%; /* Hace que las imágenes sean responsivas */
+    height: auto;
+}
+
+/* Estilos para los iconos de las redes sociales */
+a {
+    color: #fff; /* Iconos blancos */
+    font-size: 2rem; /* Tamaño inicial de los iconos */
+    margin: 0 10px; /* Espaciado alrededor de los iconos */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+a:hover, a:focus {
+    text-decoration: none; /* Elimina el subrayado al pasar el ratón o enfocar */
+}
+
+p {
+    text-align: center;
+    margin-top: 50px; /* Ajusta según necesidad */
+    margin-bottom: 50px; /* Ajusta según necesidad */
+}
+
+p a {
+    display: inline-block; /* Convierte el enlace en un bloque en línea */
+    line-height: 0; /* Elimina el espacio extra alrededor de la imagen */
+}
+
+p a img {
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+    border-radius: 5px;
+}
+
+
+
+.whatsapp-icon {
+    /* position: fixed;*/
+    right: 30px;   /* Ajusta la distancia desde el borde derecho */
+    bottom: 20px;  /* Ajusta la distancia desde el borde inferior */
+    /* font-size: 70px; Tamaño del ícono */
+    color: #20b657; /* Color del ícono de WhatsApp */
+    z-index: 1000; /* Asegura que el ícono esté por encima de otros elementos */
+}
+
+.telegram-icon {
+    /* position: fixed;*/
+    right: 30px; /* Ajusta según sea necesario */
+    bottom: 100px; /* Aumenta para subir el ícono */
+    /* font-size: 70px; */
+    color: #0088cc; /* Color característico de Telegram */
+    z-index: 1000;
+}
+
+
+@media (min-width: 768px) {
+    a {
+        font-size: 3rem; /* Tamaño mayor de los iconos en pantallas grandes */
+    }
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+.mi-div-de-fondo {
+    background-image: url('/images/cielo-estrellado.webp'); /* Ruta a tu imagen */
+    height: 100%; /* Altura del div */
+    width: 100%; /* Ancho del div */
+    background-size: cover; /* Asegura que la imagen cubra todo el div */
+    background-position: center; /* Centra la imagen en el div */
+}
