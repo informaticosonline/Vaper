@@ -38,7 +38,7 @@
                 <i class="fab fa-youtube-square" style="color: #aaca74"></i>
             </a>
 
-            <a href="https://t.me/34614180994" class="telegram-icon" target="_blank">
+            <a href="https://t.me/Pepe_1997" class="telegram-icon" target="_blank">
                 <i class="fab fa-telegram-plane"></i>
             </a>
 

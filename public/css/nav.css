@@ -1,0 +1,121 @@
+/* Estilo básico para la navegación */
+nav {
+    width: 100%;
+    background: #aaca74; /* Color de fondo del menú */
+}
+/* #aaca74 y #f018a3 */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display flex para alinear horizontalmente */
+    justify-content: left;
+}
+
+nav ul li {
+    position: relative; /* Posición relativa para los submenús */
+}
+
+nav a {
+    display: block;
+    padding: 10px 15px;
+    color: white; /* Color del texto */
+    text-decoration: none; /* Remover subrayado de los enlaces */
+}
+
+/* Submenús ocultos por defecto */
+nav ul ul {
+    display: none;
+    position: absolute; /* Posición absoluta para los submenús */
+    background: #555; /* Color de fondo de los submenús */
+}
+
+/* Mostrar submenús al pasar el cursor */
+nav ul li:hover > ul {
+    display: block;
+}
+
+/* Estilo para los enlaces de submenús */
+nav ul ul li {
+    width: 200px; /* Ancho fijo para los submenús */
+}
+
+nav ul ul a {
+    padding: 8px;
+    border-top: 1px solid #666; /* Borde superior para separar elementos */
+}
+
+/* Cambiar el estilo al pasar el cursor sobre los enlaces */
+nav a:hover {
+    background: #f018a3; /* Color de fondo al pasar el cursor */
+}
+
+#toggle-navbar {
+    position: absolute;   /* Posición absoluta respecto a su contenedor relativo */
+    right: 10px;          /* A la derecha, con un pequeño margen */
+    top: 10px;            /* Un margen desde la parte superior */
+    background-color: #f0f0f0; /* Color de fondo para visibilidad */
+    border: none;         /* Sin borde */
+    background-image: url('/images/LogotipoIco.webp');
+    padding: 25px 25px;   /* Algo de relleno para hacerlo más grande */
+    cursor: pointer;      /* Cambiar el cursor para indicar que es un botón */
+    border-bottom: #de3b34;
+    border-radius: 6px;
+    z-index: 1000;
+}
+
+/* Estilo para cuando se pasa el mouse por encima */
+#toggle-navbar:hover {
+    background-color: #e0e0e0;
+}
+@media screen and (max-width: 768px) {
+    #navbar {
+        background-color: #FABD00; /* Color de fondo completo para móviles */
+        background-image: none; /* Elimina el gradiente en móviles */
+    }
+}
+
+@media (min-width: 768px) {
+    /* Estilos para la navegación y los enlaces, como en el ejemplo anterior */
+    nav ul {
+        display: flex;
+        /* otros estilos */
+    }
+
+    nav ul ul {
+        display: none;
+        position: absolute;
+        /* otros estilos */
+    }
+
+    nav ul li:hover > ul {
+        display: block;
+    }
+
+    /* otros estilos */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 767px) {
+    nav ul {
+        display: block;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul ul {
+        position: static;
+    }
+
+    /* Botón de menú hamburguesa (oculto en pantallas grandes) */
+    .menu-toggle {
+        display: none;
+    }
+    
+    /* Estilos cuando el menú hamburguesa está activo */
+    .menu-toggle.active + ul {
+        display: block;
+    }
+}

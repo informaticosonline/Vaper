@@ -17,6 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 */
+/*
 Route::get('/', function () {
     return view('mantenimiento');
 });
+*/
+
+Route::get('/', function () {
+    return view('prueba'); // asumiendo que tienes una vista llamada 'inicio.blade.php'
+})->name('prueba.index');
