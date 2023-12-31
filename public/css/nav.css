@@ -2,6 +2,7 @@
 nav {
     width: 100%;
     background: #aaca74; /* Color de fondo del menú */
+    border-radius: 6px;
 }
 /* #aaca74 y #f018a3 */
 nav ul {
@@ -28,10 +29,30 @@ nav ul ul {
     display: none;
     position: absolute; /* Posición absoluta para los submenús */
     background: #555; /* Color de fondo de los submenús */
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+nav ul li > ul {
+    position: absolute;
+    left: 100%; /* Posiciona el submenú hacia la derecha */
+    min-width: 200px; /* Ajusta el ancho mínimo del submenú */
+    margin-left: -100%; /* Ajusta esto para controlar cuánto se desplaza el submenú */
+    /* Otros estilos que desees aplicar */
+}
+
+nav ul ul li > ul {
+    top: 0;
+    left: 100%; /* Asegura que se desplieguen hacia la derecha del submenú padre */
+    margin-left: 0; /* Ajusta esto según sea necesario */
 }
 
 /* Mostrar submenús al pasar el cursor */
 nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul li:hover > ul {
     display: block;
 }
 
@@ -53,26 +74,41 @@ nav a:hover {
 #toggle-navbar {
     position: absolute;   /* Posición absoluta respecto a su contenedor relativo */
     right: 10px;          /* A la derecha, con un pequeño margen */
-    top: 10px;            /* Un margen desde la parte superior */
-    background-color: #f0f0f0; /* Color de fondo para visibilidad */
+    top: 8px;             /* Un margen desde la parte superior */
     border: none;         /* Sin borde */
+    background-color: #aaca74;
     background-image: url('/images/LogotipoIco.webp');
-    padding: 25px 25px;   /* Algo de relleno para hacerlo más grande */
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el botón */
+    width: 37px;          /* Ancho del botón */
+    height: 37px;         /* Altura del botón */
     cursor: pointer;      /* Cambiar el cursor para indicar que es un botón */
-    border-bottom: #de3b34;
     border-radius: 6px;
-    z-index: 1000;
+    z-index: 1000;        /* Para que quede siempre encima */
 }
 
 /* Estilo para cuando se pasa el mouse por encima */
 #toggle-navbar:hover {
-    background-color: #e0e0e0;
+    background-color: #f018a3
+
 }
-@media screen and (max-width: 768px) {
-    #navbar {
-        background-color: #FABD00; /* Color de fondo completo para móviles */
-        background-image: none; /* Elimina el gradiente en móviles */
-    }
+
+.foto-login {
+    position:fixed;
+    right: 15px;
+    top: 50px;
+}
+
+.social-icons {
+    display: flex;
+    margin-left: 50px;
+    gap: 10px; /* Espacio entre cada icono */
+
+    /* Otros estilos que desees aplicar */
+}
+
+.social-icons a {
+    display: inline-block;
+    
 }
 
 @media (min-width: 768px) {
@@ -109,6 +145,15 @@ nav a:hover {
         position: static;
     }
 
+    nav ul ul li {
+        width: 100px; /* Ancho fijo para los submenús */
+    }
+
+    nav ul li > ul {
+        min-width: 100px; /* Ajusta el ancho mínimo del submenú */
+    }
+
+
     /* Botón de menú hamburguesa (oculto en pantallas grandes) */
     .menu-toggle {
         display: none;
@@ -117,5 +162,10 @@ nav a:hover {
     /* Estilos cuando el menú hamburguesa está activo */
     .menu-toggle.active + ul {
         display: block;
+    }
+
+    /* Ocultar los iconos en dispositivos móviles */
+    .social-icons {
+        display: none;
     }
 }

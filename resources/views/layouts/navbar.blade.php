@@ -1,5 +1,6 @@
 <!-- Enlace al archivo CSS -->
 <link rel="stylesheet" href="{{ asset ('css/nav.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 <!-- Navegación -->
 
@@ -87,8 +88,51 @@
                 <li><a href="#">Promociones</a></li>
                 <li><a href="#">Próximamente</a></li>
                 <li><a href="#">Sobre nosotros</a></li>
+
+                <div class="social-icons">
+
+                    <a href="https://www.tiktok.com/@humovibe" class="tiktok-icon" target="_blank">
+                        <i class="fab fa-tiktok"></i>
+                    </a>          
+
+                    <a href="https://www.instagram.com/humo_vibe?igsh=dmw2b2Ztc2gyc3h6" target="_blank">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=61554982893632" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+
+                    <a href="https://twitter.com/HumoVibe3670" class="twitter-icon" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    
+                    <a href="https://www.youtube.com/channel/UCykYzNnb4vWcafqcmyC-dPg" target="_blank">
+                        <i class="fab fa-youtube-square"></i>
+                    </a>
+
+                    <a href="https://t.me/Pepe_1997" class="telegram-icon" target="_blank">
+                        <i class="fab fa-telegram-plane" style="color: #0088cc;"></i>
+                    </a>
+
+                    <a href="https://wa.me/34614180994" target="_blank" class="whatsapp-icon">
+                        <i class="fab fa-whatsapp" style="color: #021d0c;"></i>
+                    </a>
+
+                </div>
+
             </ul>
+
         </nav>
+
+    </div>
+
+    <div class="foto-login">
+        <img src="{{ asset('images/LogotipoIco.webp') }}" alt="Logotipo Grande">
+        <p>Nombre</p>
+        <a>
+            <h4>Cerrar Sesion</h4>
+        </a>
     </div>
     
         <script>
@@ -98,6 +142,7 @@
             // Ajusta las variables y los selectores según sea necesario
             
             let navbarVisible = true;
+
             const navbar = document.getElementById('navbar');
             const toggleNavbar = document.getElementById('toggle-navbar');
             
@@ -124,3 +169,5 @@
             document.addEventListener('DOMContentLoaded', checkWindowSize);
             
         </script>
+
+    
