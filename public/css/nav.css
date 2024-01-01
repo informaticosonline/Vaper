@@ -63,7 +63,9 @@ nav ul ul li {
 
 nav ul ul a {
     padding: 8px;
-    border-top: 1px solid #666; /* Borde superior para separar elementos */
+    border-top: 1px solid #aaca74; /* Borde superior para separar elementos */
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
 
 /* Cambiar el estilo al pasar el cursor sobre los enlaces */
