@@ -1,11 +1,12 @@
 /* Estilo básico para la navegación */
-nav {
+#navbar {
     width: 100%;
     background: #aaca74; /* Color de fondo del menú */
     border-radius: 8px;
 }
+
 /* #aaca74 y #f018a3 */
-nav ul {
+#navbar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -13,11 +14,11 @@ nav ul {
     justify-content: left;
 }
 
-nav ul li {
+#navbar ul li {
     position: relative; /* Posición relativa para los submenús */
 }
 
-nav a {
+#navbar a {
     display: block;
     padding: 10px 15px;
     color: white; /* Color del texto */
@@ -25,7 +26,7 @@ nav a {
 }
 
 /* Submenús ocultos por defecto */
-nav ul ul {
+#navbar ul ul {
     display: none;
     position: absolute; /* Posición absoluta para los submenús */
     background: #555; /* Color de fondo de los submenús */
@@ -33,7 +34,7 @@ nav ul ul {
     z-index: 1000;
 }
 
-nav ul li > ul {
+#navbar ul li > ul {
     position: absolute;
     left: 100%; /* Posiciona el submenú hacia la derecha */
     min-width: 200px; /* Ajusta el ancho mínimo del submenú */
@@ -41,27 +42,27 @@ nav ul li > ul {
     /* Otros estilos que desees aplicar */
 }
 
-nav ul ul li > ul {
+#navbar ul ul li > ul {
     top: 0;
     left: 100%; /* Asegura que se desplieguen hacia la derecha del submenú padre */
     margin-left: 0; /* Ajusta esto según sea necesario */
 }
 
 /* Mostrar submenús al pasar el cursor */
-nav ul li:hover > ul {
+#navbar ul li:hover > ul {
     display: block;
 }
 
-nav ul ul li:hover > ul {
+#navbar ul ul li:hover > ul {
     display: block;
 }
 
 /* Estilo para los enlaces de submenús */
-nav ul ul li {
+#navbar ul ul li {
     width: 200px; /* Ancho fijo para los submenús */
 }
 
-nav ul ul a {
+#navbar ul ul a {
     padding: 8px;
     border-top: 1px solid #aaca74; /* Borde superior para separar elementos */
     border-top-right-radius: 8px;
@@ -69,7 +70,7 @@ nav ul ul a {
 }
 
 /* Cambiar el estilo al pasar el cursor sobre los enlaces */
-nav a:hover {
+#navbar a:hover {
     background: #f018a3; /* Color de fondo al pasar el cursor */
     border-radius: 8px;
 }
@@ -95,10 +96,27 @@ nav a:hover {
     border-radius: 8px;
 }
 
-.foto-login {
-    position:fixed;
+#foto-login {
+    position: fixed;
     right: 15px;
     top: 50px;
+    display: flex; /* Alineación horizontal de los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+#foto-login img {
+    width: 40px; /* Ancho fijo */
+    height: 40px; /* Altura fija */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor */
+    border-radius: 50%; /* Opcional: para hacer la imagen circular */
+    margin-right: 5px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 15px;
+}
+
+#login-info p,
+#login-info a {
+    margin-top: 0; /* Elimina los márgenes por defecto */
+    padding: 0; /* Ajusta el padding para controlar el espacio */
 }
 
 .social-icons {
@@ -111,23 +129,23 @@ nav a:hover {
 
 .social-icons a {
     display: inline-block;
-    
 }
 
 @media (min-width: 768px) {
+    
     /* Estilos para la navegación y los enlaces, como en el ejemplo anterior */
-    nav ul {
+    #navbar ul {
         display: flex;
         /* otros estilos */
     }
 
-    nav ul ul {
+    #navbar ul ul {
         display: none;
         position: absolute;
         /* otros estilos */
     }
 
-    nav ul li:hover > ul {
+    #navbar ul li:hover > ul {
         display: block;
     }
 
@@ -136,32 +154,32 @@ nav a:hover {
 
 /* Estilos para pantallas pequeñas */
 @media (max-width: 767px) {
-    nav ul {
+
+    #navbar ul {
         display: block;
     }
 
-    nav ul li {
-        width: 100%;
+    #navbar ul li {
+        width: 60%;
     }
 
-    nav ul ul {
+    #navbar ul ul {
         position: static;
     }
 
-    nav ul ul li {
+    #navbar ul ul li {
         width: 100px; /* Ancho fijo para los submenús */
     }
 
-    nav ul li > ul {
+    #navbar ul li > ul {
         min-width: 100px; /* Ajusta el ancho mínimo del submenú */
     }
-
 
     /* Botón de menú hamburguesa (oculto en pantallas grandes) */
     .menu-toggle {
         display: none;
     }
-    
+
     /* Estilos cuando el menú hamburguesa está activo */
     .menu-toggle.active + ul {
         display: block;

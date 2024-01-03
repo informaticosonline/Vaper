@@ -12,4 +12,7 @@
     <h1>Página de prueba básica</h1>
     <h2>Hula</h2>
 </body>
+ <footer>
+    @include('layouts.footer')
+ </footer>
 </html>

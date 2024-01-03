@@ -3,171 +3,166 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 <!-- Navegación -->
-
 <button id="toggle-navbar"></button>
 
-    <div id="navbar">
+<div id="navbar">
 
-        <nav>
+    <nav>
 
-            <ul>
-                <!-- Productos -->
-                <li><a href="#">Productos</a>
+        <ul>
+            <!-- Productos -->
+            <li><a href="#">Productos</a>
 
-                    <ul>
-                        <!-- Cajas -->
-                        <li><a href="#">Cajas</a></li>
+                <ul>
+                    <!-- Cajas -->
+                    <li><a href="#">Cajas</a></li>
 
-                        <!-- Líquidos -->
-                        <li><a href="#">Líquidos</a>
-                            <ul>
-                                <li><a href="#">Sales de nicotina</a>
-                                    <ul>
-                                        <li><a href="#">Mejores valorados</a></li>
-                                        <li><a href="#">Todos</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Aromas</a>
-                                    <ul>
-                                        <li><a href="#">Mejores valorados</a></li>
-                                        <li><a href="#">Todos</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Nicotina</a>
-                                    <ul>
-                                        <li><a href="#">Mejores valorados</a></li>
-                                        <li><a href="#">Todos</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
+                    <!-- Líquidos -->
+                    <li><a href="#">Líquidos</a>
+                        <ul>
+                            <li><a href="#">Sales de nicotina</a>
+                                <ul>
+                                    <li><a href="#">Mejores valorados</a></li>
+                                    <li><a href="#">Todos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Aromas</a>
+                                <ul>
+                                    <li><a href="#">Mejores valorados</a></li>
+                                    <li><a href="#">Todos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Nicotina</a>
+                                <ul>
+                                    <li><a href="#">Mejores valorados</a></li>
+                                    <li><a href="#">Todos</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
 
-                        <!-- Pods -->
-                        <li><a href="#">Pods</a>
-                            <ul>
-                                <li><a href="#">Pods kit</a></li>
-                                <li><a href="#">Resistencias</a></li>
-                                <li><a href="#">Mejores valorados</a></li>
-                            </ul>
-                        </li>
+                    <!-- Pods -->
+                    <li><a href="#">Pods</a>
+                        <ul>
+                            <li><a href="#">Pods kit</a></li>
+                            <li><a href="#">Resistencias</a></li>
+                            <li><a href="#">Mejores valorados</a></li>
+                        </ul>
+                    </li>
 
-                        <!-- Pods Desechables -->
-                        <li><a href="#">Pods Desechables</a>
-                            <ul>
-                                <li><a href="#">Marcas</a></li>
-                                <li><a href="#">Mejores valorados</a></li>
-                            </ul>
-                        </li>
+                    <!-- Pods Desechables -->
+                    <li><a href="#">Pods Desechables</a>
+                        <ul>
+                            <li><a href="#">Marcas</a></li>
+                            <li><a href="#">Mejores valorados</a></li>
+                        </ul>
+                    </li>
 
-                        <!-- Mods y Kits -->
-                        <li><a href="#">Mods y Kits</a>
-                            <ul>
-                                <li><a href="#">Atomizadores</a></li>
-                                <li><a href="#">Accesorios</a></li>
-                                <!-- Más subcategorías aquí -->
-                            </ul>
-                        </li>
+                    <!-- Mods y Kits -->
+                    <li><a href="#">Mods y Kits</a>
+                        <ul>
+                            <li><a href="#">Atomizadores</a></li>
+                            <li><a href="#">Accesorios</a></li>
+                            <!-- Más subcategorías aquí -->
+                        </ul>
+                    </li>
 
-                        <!-- Cachimbas -->
-                        <li><a href="#">Cachimbas</a>
-                            <ul>
-                                <li><a href="#">Cachimbas</a></li>
-                                <li><a href="#">Accesorios</a>
-                                    <ul>
-                                        <li><a href="#">Mangueras</a></li>
-                                        <!-- Más subcategorías aquí -->
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
+                    <!-- Cachimbas -->
+                    <li><a href="#">Cachimbas</a>
+                        <ul>
+                            <li><a href="#">Cachimbas</a></li>
+                            <li><a href="#">Accesorios</a>
+                                <ul>
+                                    <li><a href="#">Mangueras</a></li>
+                                    <!-- Más subcategorías aquí -->
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
 
-                <!-- Otras secciones -->
-                <li><a href="#">Novedades</a></li>
-                <li><a href="#">Promociones</a></li>
-                <li><a href="#">Próximamente</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
+            <!-- Otras secciones -->
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Promociones</a></li>
+            <li><a href="#">Próximamente</a></li>
+            <li><a href="#">Sobre nosotros</a></li>
 
-                <div class="social-icons">
+            <div class="social-icons">
 
-                    <a href="https://www.tiktok.com/@humovibe" class="tiktok-icon" target="_blank">
-                        <i class="fab fa-tiktok"></i>
-                    </a>          
+                <a href="https://www.tiktok.com/@humovibe" class="tiktok-icon" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
 
-                    <a href="https://www.instagram.com/humo_vibe?igsh=dmw2b2Ztc2gyc3h6" target="_blank">
-                        <i class="fab fa-instagram-square"></i>
-                    </a>
+                <a href="https://www.instagram.com/humo_vibe?igsh=dmw2b2Ztc2gyc3h6" target="_blank">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
 
-                    <a href="https://www.facebook.com/profile.php?id=61554982893632" target="_blank">
-                        <i class="fab fa-facebook-square"></i>
-                    </a>
+                <a href="https://www.facebook.com/profile.php?id=61554982893632" target="_blank">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
 
-                    <a href="https://twitter.com/HumoVibe3670" class="twitter-icon" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    
-                    <a href="https://www.youtube.com/channel/UCykYzNnb4vWcafqcmyC-dPg" target="_blank">
-                        <i class="fab fa-youtube-square"></i>
-                    </a>
+                <a href="https://twitter.com/HumoVibe3670" class="twitter-icon" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
 
-                    <a href="https://t.me/Pepe_1997" class="telegram-icon" target="_blank">
-                        <i class="fab fa-telegram-plane" style="color: #0088cc;"></i>
-                    </a>
+                <a href="https://www.youtube.com/channel/UCykYzNnb4vWcafqcmyC-dPg" target="_blank">
+                    <i class="fab fa-youtube-square"></i>
+                </a>
 
-                    <a href="https://wa.me/34614180994" target="_blank" class="whatsapp-icon">
-                        <i class="fab fa-whatsapp" style="color: #021d0c;"></i>
-                    </a>
+                <a href="https://t.me/Pepe_1997" class="telegram-icon" target="_blank">
+                    <i class="fab fa-telegram-plane" style="color: #0088cc;"></i>
+                </a>
 
-                </div>
+                <a href="https://wa.me/34614180994" target="_blank" class="whatsapp-icon">
+                    <i class="fab fa-whatsapp" style="color: #021d0c;"></i>
+                </a>
 
-            </ul>
+            </div>
 
-        </nav>
+        </ul>
 
-    </div>
+    </nav>
 
-    <div class="foto-login">
-        <img src="{{ asset('images/LogotipoIco.webp') }}" alt="Logotipo Grande">
+</div>
+
+<div id = "foto-login">
+    <img src="{{ asset('images/FPruMia.webp') }}" alt="FotoLogin">
+    <div id = "login-info">
         <p>Nombre</p>
-        <a>
-            <h4>Cerrar Sesion</h4>
+        <a href="/ruta-cerrar-sesion">
+            <h4>Cerrar Sesión</h4>
         </a>
     </div>
-    
-        <script>
+</div>
 
-            // Ajusta las variables y los selectores según sea necesario
-            
-            // Ajusta las variables y los selectores según sea necesario
-            
-            let navbarVisible = true;
+ <script>
 
-            const navbar = document.getElementById('navbar');
-            const toggleNavbar = document.getElementById('toggle-navbar');
-            
-            function checkWindowSize() {
-                if(window.innerWidth <= 768) {
-                    navbar.style.display = 'none';
-                    navbarVisible = false;
-                } else {
-                    navbar.style.display = 'block';
-                    navbarVisible = true;
-                }
-            }
-            
-            toggleNavbar.addEventListener('click', function() {
-                if(navbarVisible) {
-                    navbar.style.display = 'none';
-                } else {
-                    navbar.style.display = 'block';
-                }
-                navbarVisible = !navbarVisible;
-            });
-            
-            window.addEventListener('resize', checkWindowSize);
-            document.addEventListener('DOMContentLoaded', checkWindowSize);
-            
-        </script>
+    let navbarVisible = true;
 
-    
+    const navbar = document.getElementById('navbar');
+    const toggleNavbar = document.getElementById('toggle-navbar');
+
+    function checkWindowSize() {
+        if (window.innerWidth <= 768) {
+            navbar.style.display = 'none';
+            navbarVisible = false;
+        } else {
+            navbar.style.display = 'block';
+            navbarVisible = true;
+        }
+    }
+
+    toggleNavbar.addEventListener('click', function () {
+        if (navbarVisible) {
+            navbar.style.display = 'none';
+        } else {
+            navbar.style.display = 'block';
+        }
+        navbarVisible = !navbarVisible;
+    });
+
+    window.addEventListener('resize', checkWindowSize);
+    document.addEventListener('DOMContentLoaded', checkWindowSize);
+
+ </script>

@@ -1,0 +1,52 @@
+#footer {
+    background-color: #aaca74;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Dirección vertical por defecto */
+    padding: 20px; /* Espaciado */
+    align-items: center; /* Centra horizontalmente en modo columna */
+    text-align: center;
+    .fab {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+#footer-section {
+    margin-bottom: 20px; /* Espaciado entre secciones */
+    display: block;
+    align-items: center;
+    
+}
+
+#social-icons {
+    display: flex;
+    margin-left: 50px;
+    gap: 10px; /* Espacio entre cada icono */
+}
+
+#social-icons a {
+    display: inline-block;
+}
+
+
+
+@media only screen and (min-width: 768px) { /* Estilo para escritorio */
+    #footer {
+        flex-direction: row; /* Dirección horizontal en escritorio */
+        justify-content: center; /* Centra las secciones horizontalmente */
+    }
+
+    #footer-section {
+        flex: 1; /* Cada sección ocupa el mismo espacio */
+        margin-right: 20px; /* Espaciado entre secciones */
+        border-radius: 8px;
+    }
+
+    #footer-section:last-child {
+        margin-right: 0; /* No hay margen en la última sección */
+    }
+}
+
+
+
