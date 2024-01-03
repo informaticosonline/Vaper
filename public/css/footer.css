@@ -40,3 +40,9 @@
         margin-right: 0;
     }
 }
+@media only screen and (min-width: 1024px) { /* Ajusta este valor según tus necesidades */
+    #footer .fab {
+        font-size: 2rem; /* Aumenta el tamaño del ícono, ajusta según sea necesario */
+        margin-left: 20px;
+    }
+}
