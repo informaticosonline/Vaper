@@ -13,7 +13,7 @@
 
     </div>
 
-    <div id = "footer-section social-icons">
+    <div id = "footer-section">
 
         <a href="https://www.tiktok.com/@humovibe" class="tiktok-icon" target="_blank">
             <i class="fab fa-tiktok"></i>

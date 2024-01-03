@@ -6,9 +6,11 @@
     padding: 20px; /* Espaciado */
     align-items: center; /* Centra horizontalmente en modo columna */
     text-align: center;
+    color: white;
     .fab {
         color: white;
         text-decoration: none;
+        gap: 30px;
     }
 }
 
@@ -18,18 +20,6 @@
     align-items: center;
     
 }
-
-#social-icons {
-    display: flex;
-    margin-left: 50px;
-    gap: 10px; /* Espacio entre cada icono */
-}
-
-#social-icons a {
-    display: inline-block;
-}
-
-
 
 @media only screen and (min-width: 768px) { /* Estilo para escritorio */
     #footer {
