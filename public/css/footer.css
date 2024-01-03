@@ -2,41 +2,41 @@
     background-color: #aaca74;
     border-radius: 8px;
     display: flex;
-    flex-direction: column; /* Dirección vertical por defecto */
-    padding: 20px; /* Espaciado */
-    align-items: center; /* Centra horizontalmente en modo columna */
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
     text-align: center;
     color: white;
-    .fab {
-        color: white;
-        text-decoration: none;
-        gap: 30px;
-    }
 }
 
-#footer-section {
-    margin-bottom: 20px; /* Espaciado entre secciones */
+#footer .fab {
+    color: white;
+    text-decoration: none; /* Añadido para eliminar cualquier subrayado */
+}
+
+.footer-section {
+    margin-bottom: 20px;
     display: block;
     align-items: center;
-    
 }
 
-@media only screen and (min-width: 768px) { /* Estilo para escritorio */
+#footer a {
+    text-decoration: none; /* Asegura que los enlaces no tengan subrayado */
+}
+
+@media only screen and (min-width: 768px) {
     #footer {
-        flex-direction: row; /* Dirección horizontal en escritorio */
-        justify-content: center; /* Centra las secciones horizontalmente */
+        flex-direction: row;
+        justify-content: center;
     }
 
-    #footer-section {
-        flex: 1; /* Cada sección ocupa el mismo espacio */
-        margin-right: 20px; /* Espaciado entre secciones */
+    .footer-section {
+        flex: 1;
+        margin-right: 20px;
         border-radius: 8px;
     }
 
-    #footer-section:last-child {
-        margin-right: 0; /* No hay margen en la última sección */
+    .footer-section:last-child {
+        margin-right: 0;
     }
 }
-
-
-

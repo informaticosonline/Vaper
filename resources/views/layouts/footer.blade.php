@@ -4,7 +4,7 @@
 
 <div id = "footer">
 
-    <div id = "footer-section">
+    <div class = "footer-section">
 
         <h3>Contacta con HumoVibe</h1>
         <h4>Dirección: Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
@@ -13,7 +13,7 @@
 
     </div>
 
-    <div id = "footer-section">
+    <div class = "footer-section">
 
         <a href="https://www.tiktok.com/@humovibe" class="tiktok-icon" target="_blank">
             <i class="fab fa-tiktok"></i>
@@ -45,7 +45,7 @@
 
     </div>
 
-    <div id = "footer-section">
+    <div class = "footer-section">
 
         <h1>Mapa grande</h1>
 
