@@ -52,3 +52,104 @@
     </div>
 
 </div>
+
+<div id = "footer-dos">
+
+    <div class = "footer-section-dos">
+
+        <h3>
+            Índice
+        </h3>
+
+        <div class="footer-section-tres">
+
+            <a href="#">
+                <h6>Productos</h6>
+            </a>
+
+            <a href="#">
+                <h6>Novedades</h6>
+            </a>
+
+            
+            <a href="#">
+                <h6>Promociones</h6>
+            </a>
+            
+            <a href="#">
+                <h6>Próximamente</h6>
+            </a>
+            
+            <a href="#">
+                <h6>Sobre nosotros</h6>
+            </a>
+
+        </div>
+            
+    </div>
+
+    <div class = "footer-section-dos">
+
+        <h3>
+            Información
+        </h3>
+
+        <div class="footer-section-tres">
+
+            <a href="#">
+                <h6>Contacte con nosotros</h6>
+            </a>
+
+            <a href="#">
+                <h6>Aviso legal</h6>
+            </a>
+
+            <a href="#">
+                <h6>Política de cookies</h6>
+            </a>
+
+            <a href="#">
+                <h6>Política de privacidad</h6>
+            </a>
+
+            <a href="#">
+                <h6>Condiciones generales  de compra</h6>
+            </a>
+
+        </div>
+        
+    </div>
+
+    <div class = "footer-section-dos">
+
+        <h3>
+            Índice
+        </h3>
+
+            <div class="footer-section-tres">
+
+                <a href="#">
+                    <h6>Productos</h6>
+                </a>
+
+                <a href="#">
+                    <h6>Novedades</h6>
+                </a>
+
+                <a href="#">
+                    <h6>Promociones</h6>
+                </a>
+
+                <a href="#">
+                    <h6>Próximamente</h6>
+                </a>
+
+                <a href="#">
+                    <h6>Sobre nosotros</h6>
+                </a>
+
+            </div>
+        
+    </div>
+
+</div>

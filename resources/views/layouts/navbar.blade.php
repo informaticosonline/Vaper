@@ -131,7 +131,7 @@
     <div id = "login-info">
         <p>Nombre</p>
         <a href="/ruta-cerrar-sesion">
-            <h4>Cerrar Sesión</h4>
+            <h6>Cerrar sesión</h6>
         </a>
     </div>
 </div>

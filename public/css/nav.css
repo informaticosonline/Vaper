@@ -97,7 +97,7 @@
 }
 
 #foto-login {
-    position: fixed;
+    position: absolute;
     right: 15px;
     top: 50px;
     display: flex; /* Alineación horizontal de los elementos */

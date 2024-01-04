@@ -12,6 +12,7 @@
 #footer .fab {
     color: white;
     text-decoration: none; /* Añadido para eliminar cualquier subrayado */
+    padding: 10px;
 }
 
 .footer-section {
@@ -24,21 +25,46 @@
     text-decoration: none; /* Asegura que los enlaces no tengan subrayado */
 }
 
+#footer-dos {
+    background-color: #555;
+    color: #f018a3;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.footer-section-tres {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+.footer-section-tres a {
+    margin: 0 10px; /* Añade un margen horizontal de 10px */
+}
+
 @media only screen and (min-width: 768px) {
-    #footer {
+    #footer, #footer-dos {
         flex-direction: row;
         justify-content: center;
     }
 
-    .footer-section {
+    .footer-section, .footer-section-dos {
         flex: 1;
         margin-right: 20px;
         border-radius: 8px;
     }
 
-    .footer-section:last-child {
+    .footer-section:last-child, .footer-section-dos:last-child {
         margin-right: 0;
     }
+
 }
 @media only screen and (min-width: 1024px) { /* Ajusta este valor según tus necesidades */
     #footer .fab {
