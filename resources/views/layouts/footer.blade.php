@@ -109,22 +109,32 @@
                 <h6>Contacte con nosotros</h6>
             </a>
 
-            <a href="/avisoLegal.pdf" target="_blank">
-                Aviso legal
-            </a>
-
         </div>
 
         <div class="footer-section-tres">
-            <a href="/politicaCookies.pdf" target="_blank">
-                Política de cookies
-            </a>
-
-            <a href="#">
-                <h6>Política de privacidad</h6>
-            </a>
+            <!-- Enlace para abrir el modal de Política de Cookies -->
+            <a href="javascript:void(0)" onclick="openModal('modalCookies')">Política de Cookies</a>
         
+            <!-- Modal de Política de Cookies -->
+            <div id="modalCookies" class="modal">
+                <div class="modal-content">
+                    <span onclick="closeModal('modalCookies')" class="close">&times;</span>
+                    <iframe src="/politicaCookies.pdf" frameborder="0" style="width:100%; height:80vh;"></iframe>
+                </div>
+            </div>
+        
+            <!-- Enlace para abrir el modal de Aviso Legal -->
+            <a href="javascript:void(0)" onclick="openModal('modalLegal')">Aviso Legal</a>
+        
+            <!-- Modal de Aviso Legal -->
+            <div id="modalLegal" class="modal">
+                <div class="modal-content">
+                    <span onclick="closeModal('modalLegal')" class="close">&times;</span>
+                    <iframe src="/avisoLegal.pdf" frameborder="0" style="width:100%; height:80vh;"></iframe>
+                </div>
+            </div>
         </div>
+        
 
         <div class="footer-section-tres">
 
@@ -176,3 +186,22 @@
     </div>
 
 </div>
+
+<script>
+
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = "block";
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+
+    // Cerrar el modal si el usuario hace clic fuera de él
+    window.onclick = function(event) {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = "none";
+        }
+    }
+
+</script>
