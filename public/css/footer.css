@@ -65,10 +65,11 @@
 
 .modal-content {
     position: relative;
-    background-color: #fefefe;
+    background-color: #aaca74;
     margin: 10% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #f018a3;
+    border-radius: 8px;
     width: 70%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     animation-name: animatetop;
@@ -81,7 +82,7 @@
 }
 
 .close {
-    color: #aaa;
+    color: #f018a3;
     float: right;
     font-size: 28px;
     font-weight: bold;
