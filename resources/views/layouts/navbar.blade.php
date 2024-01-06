@@ -149,7 +149,7 @@
                 </a>
 
                 <a href="https://wa.me/34614180994" target="_blank" class="whatsapp-icon">
-                    <i class="fab fa-whatsapp" style="color: #021d0c;"></i>
+                    <i class="fab fa-whatsapp" style="color: #3af880;"></i>
                 </a>
 
             </div>

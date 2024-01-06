@@ -1,7 +1,7 @@
 /* Estilo básico para la navegación */
 #navbar {
     width: 100%;
-    background: #aaca74; /* Color de fondo del menú */
+    background-image: url('/images/cielo-estrellado.webp');
     border-radius: 8px;
 }
 
@@ -20,9 +20,17 @@
 #navbar a {
     display: block;
     padding: 10px 15px;
-    color: white; /* Color del texto */
-    text-decoration: none; /* Remover subrayado de los enlaces */
-}
+    color: #aaca74;
+    text-decoration: none;
+    /*
+    text-shadow:/*Para el efecto de las letras 
+        -.2px -.2px 0 #aaca74,  
+         .2px -.2px 0 #aaca74,
+        -.2px .2px 0 #aaca74,
+         .2px .2px 0 #aaca74;
+    */
+} 
+
 
 /* Submenús ocultos por defecto */
 #navbar ul ul {
@@ -82,7 +90,7 @@
 
 #search-form {
     display: flex;
-    border: 1px solid #b61111;
+    border: 1px solid #f018a3;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -94,7 +102,7 @@
 }
 
 #search-button {
-    background-color: teal;
+    background-color: #aaca74;
     border: none;
     color: white;
     padding: 10px;
