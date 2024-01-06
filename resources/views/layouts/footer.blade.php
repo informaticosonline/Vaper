@@ -1,6 +1,8 @@
 <!-- Enlace al archivo CSS -->
 <link rel="stylesheet" href="{{ asset ('css/footer.css') }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 <div id = "footer">
 
@@ -40,7 +42,7 @@
         </a>
 
         <a href="https://wa.me/34614180994" target="_blank" class="whatsapp-icon">
-            <i class="fab fa-whatsapp" style="color: #021d0c;"></i>
+            <i class="fab fa-whatsapp" style="color: #3af880;"></i>
         </a>
 
     </div>
@@ -55,7 +57,7 @@
 
 <div id = "footer-dos">
 
-    <div class = "footer-section-dos">
+    <div class = "footer-section">
 
         <h3>
             Índice
@@ -71,7 +73,10 @@
                 <h6>Novedades</h6>
             </a>
 
+        </div>
             
+        <div class="footer-section-tres">
+
             <a href="#">
                 <h6>Promociones</h6>
             </a>
@@ -79,6 +84,10 @@
             <a href="#">
                 <h6>Próximamente</h6>
             </a>
+
+        </div>
+
+        <div class="footer-section-tres">
             
             <a href="#">
                 <h6>Sobre nosotros</h6>
@@ -88,7 +97,7 @@
             
     </div>
 
-    <div class = "footer-section-dos">
+    <div class = "footer-section">
 
         <h3>
             Información
@@ -100,17 +109,24 @@
                 <h6>Contacte con nosotros</h6>
             </a>
 
-            <a href="#">
-                <h6>Aviso legal</h6>
+            <a href="/avisoLegal.pdf" target="_blank">
+                Aviso legal
             </a>
 
-            <a href="#">
-                <h6>Política de cookies</h6>
+        </div>
+
+        <div class="footer-section-tres">
+            <a href="/politicaCookies.pdf" target="_blank">
+                Política de cookies
             </a>
 
             <a href="#">
                 <h6>Política de privacidad</h6>
             </a>
+        
+        </div>
+
+        <div class="footer-section-tres">
 
             <a href="#">
                 <h6>Condiciones generales  de compra</h6>
@@ -120,7 +136,7 @@
         
     </div>
 
-    <div class = "footer-section-dos">
+    <div class = "footer-section">
 
         <h3>
             Índice
@@ -136,6 +152,10 @@
                     <h6>Novedades</h6>
                 </a>
 
+            </div>
+
+            <div class="footer-section-tres">
+
                 <a href="#">
                     <h6>Promociones</h6>
                 </a>
@@ -143,7 +163,10 @@
                 <a href="#">
                     <h6>Próximamente</h6>
                 </a>
+            </div>
 
+            <div class="footer-section-tres">
+                
                 <a href="#">
                     <h6>Sobre nosotros</h6>
                 </a>

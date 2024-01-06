@@ -5,7 +5,6 @@
     border-radius: 8px;
 }
 
-/* #aaca74 y #f018a3 */
 #navbar ul {
     list-style-type: none;
     padding: 0;
@@ -39,13 +38,12 @@
     left: 100%; /* Posiciona el submenú hacia la derecha */
     min-width: 200px; /* Ajusta el ancho mínimo del submenú */
     margin-left: -100%; /* Ajusta esto para controlar cuánto se desplaza el submenú */
-    /* Otros estilos que desees aplicar */
 }
 
 #navbar ul ul li > ul {
     top: 0;
     left: 100%; /* Asegura que se desplieguen hacia la derecha del submenú padre */
-    margin-left: 0; /* Ajusta esto según sea necesario */
+    margin-left: 0;
 }
 
 /* Mostrar submenús al pasar el cursor */
@@ -75,85 +73,97 @@
     border-radius: 8px;
 }
 
-#toggle-navbar {
-    position: absolute;   /* Posición absoluta respecto a su contenedor relativo */
-    right: 10px;          /* A la derecha, con un pequeño margen */
-    top: 8px;             /* Un margen desde la parte superior */
-    border: none;         /* Sin borde */
-    background-color: #aaca74;
-    background-image: url('/images/LogotipoIco.webp');
-    background-size: cover; /* Asegura que la imagen de fondo cubra todo el botón */
-    width: 37px;          /* Ancho del botón */
-    height: 37px;         /* Altura del botón */
-    cursor: pointer;      /* Cambiar el cursor para indicar que es un botón */
-    border-radius: 6px;
-    z-index: 1000;        /* Para que quede siempre encima */
+#orden-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15%;
 }
 
-/* Estilo para cuando se pasa el mouse por encima */
+#search-form {
+    display: flex;
+    border: 1px solid #b61111;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#search-query {
+    border: none;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+#search-button {
+    background-color: teal;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#toggle-navbar {
+    position: absolute;
+    right: 8px;
+    top: 112px;
+    border: none;
+    background-color: #aaca74;
+    background-image: url('/images/LogotipoIco.webp');
+    background-size: cover;
+    width: 37px;
+    height: 37px;
+    cursor: pointer;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
 #toggle-navbar:hover {
     background-color: #f018a3;
     border-radius: 8px;
 }
 
+.logo-escala {
+    width: 100px;
+    height: auto;
+    margin-left: 5rem;
+}
+
 #foto-login {
     position: absolute;
-    right: 15px;
-    top: 50px;
-    display: flex; /* Alineación horizontal de los elementos */
-    align-items: center; /* Centra verticalmente los elementos */
+    right: 13px;
+    top: 30px;
+    display: flex;
+    align-items: center;
 }
 
 #foto-login img {
-    width: 40px; /* Ancho fijo */
-    height: 40px; /* Altura fija */
-    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor */
-    border-radius: 50%; /* Opcional: para hacer la imagen circular */
-    margin-right: 5px; /* Espacio entre la imagen y el texto */
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 5px;
     margin-bottom: 15px;
 }
 
-#login-info p,
-#login-info a {
-    margin-top: 0; /* Elimina los márgenes por defecto */
-    padding: 0; /* Ajusta el padding para controlar el espacio */
+#login-info p, #login-info a {
+    margin-top: 0;
+    padding: 0;
 }
 
 .social-icons {
     display: flex;
     margin-left: 50px;
-    gap: 10px; /* Espacio entre cada icono */
-
-    /* Otros estilos que desees aplicar */
 }
 
 .social-icons a {
     display: inline-block;
 }
 
-@media (min-width: 768px) {
-    
-    /* Estilos para la navegación y los enlaces, como en el ejemplo anterior */
-    #navbar ul {
-        display: flex;
-        /* otros estilos */
-    }
-
-    #navbar ul ul {
-        display: none;
-        position: absolute;
-        /* otros estilos */
-    }
-
-    #navbar ul li:hover > ul {
-        display: block;
-    }
-
-    /* otros estilos */
-}
-
-/* Estilos para pantallas pequeñas */
+/* Ajustes para pantallas pequeñas */
 @media (max-width: 767px) {
+    #orden-cabecera {
+        flex-direction: column;
+        padding: 1rem;
+    }
 
     #navbar ul {
         display: block;
@@ -168,24 +178,42 @@
     }
 
     #navbar ul ul li {
-        width: 100px; /* Ancho fijo para los submenús */
+        width: 100px;
     }
 
     #navbar ul li > ul {
-        min-width: 100px; /* Ajusta el ancho mínimo del submenú */
+        min-width: 100px;
     }
 
-    /* Botón de menú hamburguesa (oculto en pantallas grandes) */
-    .menu-toggle {
+    .social-icons {
         display: none;
     }
 
-    /* Estilos cuando el menú hamburguesa está activo */
-    .menu-toggle.active + ul {
-        display: block;
+    .logo-escala {
+        margin-left: auto;
+    }
+}
+
+/* Ajustes para pantallas medianas */
+@media (min-width: 768px) and (max-width: 991px) {
+    .social-icons {
+        display: none;
+    }
+}
+
+/* Ajustes para dispositivos de alta densidad de píxeles en orientación horizontal */
+@media only screen and (min-device-width: 678px) and (max-device-width: 834px) and (orientation: landscape) {
+    #orden-cabecera {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
 
-    /* Ocultar los iconos en dispositivos móviles */
+    #navbar ul {
+        display: flex;
+        flex-direction: row;
+    }
+
     .social-icons {
         display: none;
     }

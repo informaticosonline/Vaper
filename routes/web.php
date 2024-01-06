@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,6 @@ Route::get('/', function () {
 Route::get('/', function () {
     return view('prueba'); // asumiendo que tienes una vista llamada 'inicio.blade.php'
 })->name('prueba.index');
+
+Route::get('/buscar', [Controller::class, 'buscar'])->name('buscar');
+

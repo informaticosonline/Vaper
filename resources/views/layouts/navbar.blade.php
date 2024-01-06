@@ -1,8 +1,41 @@
 <!-- Enlace al archivo CSS -->
 <link rel="stylesheet" href="{{ asset ('css/nav.css') }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 
 <!-- Navegación -->
+<div id="orden-cabecera">
+
+    <div id="foto-cabecera">
+
+        <a href="LogotipoEscala.webp">
+
+            <img src=" {{ asset ('images/LogotipoEscala.webp') }}" alt="Logotipo-general" class="logo-escala">
+
+        </a>
+
+    </div>
+
+    <div>
+
+        <form id="search-form" action="{{ url('/buscar') }}" method="GET">
+            <input type="text" id="search-query" name="query" placeholder="Buscar un producto, una marca..." aria-label="Buscar">
+            <button type="submit" id="search-button">
+                <i class="fa fa-search"></i> <!-- Icono de búsqueda, puedes usar una imagen o una clase de FontAwesome -->
+            </button>
+        </form>        
+
+    </div>
+    
+    <div>
+
+        <h1>Carrito</h1>
+
+    </div>
+
+</div>
+
 <button id="toggle-navbar"></button>
 
 <div id="navbar">
@@ -83,6 +116,7 @@
             </li>
 
             <!-- Otras secciones -->
+            <li><a href="#">Cajas</a></li>
             <li><a href="#">Novedades</a></li>
             <li><a href="#">Promociones</a></li>
             <li><a href="#">Próximamente</a></li>
@@ -146,9 +180,11 @@
     function checkWindowSize() {
         if (window.innerWidth <= 768) {
             navbar.style.display = 'none';
+            toggleNavbar.style.top = '262px';
             navbarVisible = false;
         } else {
             navbar.style.display = 'block';
+            toggleNavbar.style.top = '112px';
             navbarVisible = true;
         }
     }
