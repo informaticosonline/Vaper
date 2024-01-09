@@ -9,10 +9,42 @@
 
     <div id="foto-cabecera">
 
-        <a href="LogotipoEscala.webp">
+        <a href="{{ route('inicio.index') }}">
 
             <img src=" {{ asset ('images/LogotipoEscala.webp') }}" alt="Logotipo-general" class="logo-escala">
 
+        </a>
+
+    </div>
+
+    <div class="social-icons">
+
+        <a href="https://www.tiktok.com/@humovibe" class="tiktok-icon" target="_blank">
+            <i class="fab fa-tiktok"></i>
+        </a>
+
+        <a href="https://www.instagram.com/humo_vibe?igsh=dmw2b2Ztc2gyc3h6" target="_blank">
+            <i class="fab fa-instagram-square"></i>
+        </a>
+
+        <a href="https://www.facebook.com/profile.php?id=61554982893632" target="_blank">
+            <i class="fab fa-facebook-square"></i>
+        </a>
+
+        <a href="https://twitter.com/HumoVibe3670" class="twitter-icon" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <a href="https://www.youtube.com/channel/UCykYzNnb4vWcafqcmyC-dPg" target="_blank">
+            <i class="fab fa-youtube-square"></i>
+        </a>
+
+        <a href="https://t.me/Pepe_1997" class="telegram-icon" target="_blank">
+            <i class="fab fa-telegram-plane" style="color: #0088cc;"></i>
+        </a>
+
+        <a href="https://wa.me/34614180994" target="_blank" class="whatsapp-icon">
+            <i class="fab fa-whatsapp" style="color: #3af880;"></i>
         </a>
 
     </div>

@@ -25,8 +25,8 @@ Route::get('/', function () {
 */
 
 Route::get('/', function () {
-    return view('prueba'); // asumiendo que tienes una vista llamada 'inicio.blade.php'
-})->name('prueba.index');
+    return view('inicio'); // asumiendo que tienes una vista llamada 'inicio.blade.php'
+})->name('inicio.index');
 
 Route::get('/buscar', [Controller::class, 'buscar'])->name('buscar');
 
